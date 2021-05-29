@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/************ 
+//--------------------------------
+// GENERAL
+//-------------------------------
+************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: gray;
+  background: #f2f2f2;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-top: 80px; }
+
+h1 {
+  font-size: 2.3em;
+  line-height: 1.3em;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: 300;
+  color: black;
+  font-family: 'Righteous', cursive; }
+
+p {
+  margin: 0 0 1.5em 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+  background: #333;
+  color: white;
+  height: 80px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed; }
+
+#main-header a {
+  color: white; }
+
+/*
+ * Logo
+ */
+#logo-header {
+  float: left;
+  padding: 15px 0 0 20px;
+  text-decoration: none; }
+
+#logo-header:hover {
+  color: orangered; }
+
+#logo-header .site-name {
+  display: block;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: 'Righteous', cursive; }
+
+#logo-header .site-desc {
+  display: block;
+  font-weight: 300;
+  font-size: 0.8em;
+  color: white; }
+
+/*
+ * Navegación
+ */
+nav {
+  float: right; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 20px; }
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px; }
+
+nav ul li a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: large; }
+
+nav ul li a:hover {
+  background: orangered;
+  text-decoration: none; }
+
+/************ 
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-content {
+  background: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+#main-content header,
+#main-content .content {
+  padding: 40px; }
+
+.tarjeta {
+  text-align: center; }
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px; }
+
+#main-footer p {
+  margin: 0; }
+
+#main-footer a {
+  color: white; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-around;
+  padding: 15px; }
+
+.container .contacto {
+  background-image: url("https://i.imgur.com/V6FBieE.png");
+  background-color: transparent;
+  background-size: contain;
+  display: grid;
+  justify-items: center; }
+
+#main-header nav a {
+  color: #333; }
+
+#main-header nav #navbarDropdown {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 1.5rem; }
+
+#main-header nav #navbarDropdown:hover {
+  color: orangered; }
