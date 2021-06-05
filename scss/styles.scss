@@ -8,7 +8,7 @@ body {
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	color: gray;
-	background: #f2f2f2; 
+	background-color:#f2f2f2; 
 	font-size: 1em;
 	line-height: 1.5em;
 	
@@ -40,20 +40,37 @@ img {
 // CABECERA
 //-------------------------------
 ************/
-#main-header {
-	background: #333;
-	color: white;
-	height: 80px;
-	
+
+.navbar {
+	background-color: #333;
+	height: 80px;	
 	width: 100%;
 	left: 0;
 	top: 0;
 	position: fixed;
+	
 }	
-	#main-header a {
-		color: white;
+	.navbar a {
+		color:  #333;
 	}
 
+    #logo-header {
+		color: #333;
+	}
+
+
+.navbar-nav .nav-item {
+	height: 80px;
+	width: auto;
+	border:  1px;
+	border-radius:solid #333 1px;
+	background-color: #f8f9fa;
+
+}
+
+.navbar-nav .nav-item a {
+	color: black;
+}
 	
 /*
  * Logo
@@ -61,7 +78,8 @@ img {
 #logo-header {
 	float: left;
 	padding: 15px 0 0 20px;
-	text-decoration: none;
+	text-decoration: solid;
+	color: #333;
 }
 	#logo-header:hover {
 		color: orangered;
@@ -72,13 +90,14 @@ img {
 		font-weight: 700;
 		font-size: 2em;
         font-family: 'Righteous', cursive;
+		
 	}
 	
 	#logo-header .site-desc {
 		display: block;
 		font-weight: 300;
-		font-size: 0.8em;
-		color:white;
+		font-size: 0.9em;
+		color:#333;
 	}
 	
 
@@ -87,6 +106,7 @@ img {
  */
 nav {
 	float: right;
+	
 }
 	nav ul {
 		margin: 0;
@@ -107,11 +127,8 @@ nav {
                 font-size: large;
 			}
 			
-				nav ul li a:hover {
-					background: orangered;
-                    text-decoration: none;
-                    				}
-	
+				
+                    			
 
 
 
@@ -163,15 +180,14 @@ nav {
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
-		justify-content: space-around;
-		padding: 15px;
+		justify-content: space-evenly;
+		padding: 5px;
 	
 	}
 
 .container .contacto{
 
     background-image: url("https://i.imgur.com/V6FBieE.png");
-    background-color: transparent;
     background-size: contain;
     display: grid;
     justify-items: center;	
@@ -189,7 +205,9 @@ nav {
     
 }
 
-#main-header nav #navbarDropdown:hover { 
-    color: orangered;
 
+
+
+h2 {
+	color: #333;
 }
